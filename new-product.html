@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/new-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Trang Chu</title>
+  </head>
+  <body>
+    <div id="app">
+      <section class="container">
+        <aside class="side-bar">
+          <ul role="menubar" class="menu-bar">
+            <div class="web-name">
+              <h5>WEB NAME</h5>
+            </div>
+            <div role="menuitem" aria-haspopup="true" class="sub-menu">
+              <div class="sub-menu-tittle">
+                <i class="fas fa-box"></i>
+                Sản Phẩm
+              </div>
+              <div class="menu">
+                <div class="menu-item-group">
+                  <div class="menu-title">Sản phẩm có sẵn</div>
+                  <div class="item-group">
+                    <a href="index.html"
+                      ><div class="menu-item">Danh Sách</div></a
+                    >
+                    <a href="http://"><div class="menu-item">Thêm Mới</div></a>
+                  </div>
+                </div>
+                <div class="menu-item-group">
+                  <div class="menu-title">Sản phẩm đặt trước</div>
+                  <div class="item-group">
+                    <a href="http://"><div class="menu-item">Danh Sách</div></a>
+                    <a href="http://"><div class="menu-item">Thêm Mới</div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </aside>
+        <section class="content">
+          <section class="header">
+            <div class="breadcumb">
+              <span class="breadcumb-item"> Danh Sách Sản Phẩm </span>
+            </div>
+          </section>
+          <main class="main">
+            <div class="wrap">
+              <form class="form">
+                <div class="item-form">
+                  <label for="name" class="form-label"> Tên </label>
+                  <div class="item-form-content">
+                    <div class="input">
+                      <input
+                        type="text"
+                        autocomplete="off"
+                        class="input-inner"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="item-form">
+                  <label for="price" class="form-label"> Giá </label>
+                  <div class="item-form-content">
+                    <div class="input">
+                      <input
+                        type="text"
+                        autocomplete="off"
+                        class="input-inner"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="item-form">
+                  <label for="catagory" class="form-label">
+                    Loại Sản Phẩm
+                  </label>
+                  <div class="item-form-content">
+                    <div class="select">
+                      <input
+                        type="text"
+                        readonly="readonly"
+                        autocomplete="off"
+                        placeholder="Loại Sản Phẩm"
+                        class="input-inner"
+                      />
+                      <span class="suffix">
+                        <span class="suffix-inner">
+                          <i
+                            class="fas fa-angle-down"
+                            style="color: rgba(96, 95, 97, 0.5)"
+                          ></i>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-form">
+                  <label for="image" class="form-label"> Hình ảnh </label>
+                  <div class="item-form-content">
+                    <div class="img-wrapper">
+                      <img
+                        src="image/upload-image.png"
+                        style="width: 200px; height: 200px"
+                      />
+                      <input
+                        accept="img/jpeg/png"
+                        type="file"
+                        id="fileupload"
+                        class="file-upload"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="item-form">
+                  <label for="remain" class="form-label"> Còn hàng </label>
+                  <div class="item-form-content">
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="item-form">
+                  <div class="item-form-content">
+                    <button type="button" class="button create">
+                      <span>Tạo</span>
+                    </button>
+                    <button type="button" class="button reset">
+                      <span>Reset</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </main>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

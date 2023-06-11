@@ -19,6 +19,7 @@ label {
   display: flex;
   flex-direction: column;
   background-color: rgba(202, 200, 200, 0.61);
+  width: 650px;
   border: none;
   padding: 45px;
 }

@@ -1,26 +1,13 @@
-main {
-  box-sizing: border-box;
-}
-
-label {
-  color: black;
-  font-size: 15px;
-}
-
 .main {
-  display: block;
+  display: flex;
   flex: 1;
   flex-basis: auto;
-  overflow: auto;
   padding: 20px;
 }
 
 .wrap {
-  display: flex;
-  flex-direction: column;
   background-color: rgba(202, 200, 200, 0.61);
   width: 650px;
-  border: none;
   padding: 45px;
 }
 
@@ -29,6 +16,16 @@ label {
   flex-direction: row;
   margin-top: 20px;
   width: 600px;
+}
+
+.alert-text {
+  top: 100%;
+  left: 0;
+  color: red;
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 5px;
+  display: none;
 }
 
 .form-label {
@@ -46,6 +43,7 @@ label {
 
 .input-inner {
   display: inline-block;
+  content: "";
   height: 40px;
   width: 100%;
   box-sizing: border-box;
@@ -53,7 +51,11 @@ label {
   border: 1px solid rgba(151, 147, 147, 1);
   border-radius: 4px;
   padding: 0 15px;
-  outline: 0;
+  outline: 1px solid rgba(96, 95, 97, 0.5);
+}
+
+.input-inner:focus {
+  outline: 1px solid #2196f3;
 }
 
 .select {

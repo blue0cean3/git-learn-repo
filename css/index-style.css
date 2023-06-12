@@ -4,6 +4,24 @@
   color: white;
 }
 
+main {
+  box-sizing: border-box;
+}
+
+label {
+  color: black;
+  font-size: 15px;
+}
+
+div {
+  display: block;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -73,6 +91,8 @@
   height: 50px;
   background-color: aliceblue;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .breadcumb-item {
@@ -84,18 +104,12 @@
 .main {
   display: block;
   box-sizing: border-box;
-  overflow: auto;
   padding: 25px;
 }
 
 .button {
   margin: 15px;
   text-align: left;
-}
-
-button {
-  width: 120px;
-  height: 40px;
 }
 
 .fa {

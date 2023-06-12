@@ -67,12 +67,16 @@
                 <div class="item-form">
                   <label for="name" class="form-label"> Tên </label>
                   <div class="item-form-content">
-                    <div class="input">
+                    <div class="input active">
                       <input
                         type="text"
                         autocomplete="off"
                         class="input-inner"
+                        id="name-input"
                       />
+                    </div>
+                    <div class="alert-text" id="name">
+                      Vui lòng nhập tên sản phẩm
                     </div>
                   </div>
                 </div>
@@ -84,8 +88,10 @@
                         type="text"
                         autocomplete="off"
                         class="input-inner"
+                        id="price-input"
                       />
                     </div>
+                    <div class="alert-text" id="price">Vui lòng nhập giá</div>
                   </div>
                 </div>
                 <div class="item-form">
@@ -154,5 +160,6 @@
         </section>
       </section>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

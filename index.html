@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/table-style.css" />
     <title>Trang Chu</title>
   </head>
   <body>
@@ -55,12 +56,12 @@
           </ul>
         </aside>
         <section class="content">
-          <div class="header">
+          <header class="header">
             <div class="breadcumb">
               <span class="breadcumb-item"> Danh Sách Sản Phẩm </span>
             </div>
-          </div>
-          <div class="main">
+          </header>
+          <main class="main">
             <div class="button">
               <button type="button" class="fa fa-refresh">
                 <span>Reload</span>
@@ -69,8 +70,61 @@
                 <span>Xóa hết</span>
               </button>
             </div>
-            <div class="table"></div>
-          </div>
+            <div class="table-wrapper">
+              <table
+                class="table-header"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                style="width: 1200px"
+              >
+                <colgroup>
+                  <col class="table-1-column-1" width="120" />
+                  <col class="table-1-column-2" width="120" />
+                  <col class="table-1-column-3" width="300" />
+                  <col class="table-1-column-4" width="120" />
+                  <col class="table-1-column-5" width="200" />
+                  <col class="table-1-column-6" width="200" />
+                  <col class="gutter" />
+                </colgroup>
+                <th colspan="1" rowspan="1" class="table-1-column-1">
+                  <div class="cell">ID</div>
+                </th>
+                <th colspan="1" rowspan="1" class="table-1-column-2">
+                  <div class="cell">Tên</div>
+                </th>
+                <th colspan="1" rowspan="1" class="table-1-column-3">
+                  <div class="cell">Hình</div>
+                </th>
+                <th colspan="1" rowspan="1" class="table-1-column-4">
+                  <div class="cell">Giá</div>
+                </th>
+                <th colspan="1" rowspan="1" class="table-1-column-5">
+                  <div class="cell">Loại</div>
+                </th>
+                <th colspan="1" rowspan="1" class="table-1-column-6">
+                  <div class="cell">Trạng thái</div>
+                </th>
+              </table>
+              <table
+                class="fixed-table"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <th class="fixed-column">
+                  <div class="cell">
+                    <input
+                      type="text"
+                      id="search-bar"
+                      size="mini"
+                      placeholder="Type to search"
+                    />
+                  </div>
+                </th>
+              </table>
+            </div>
+          </main>
         </section>
       </section>
     </div>

@@ -18,6 +18,8 @@ step 7: git push -u origin master
 
 addition:
 
+git pull "SSH name " pull a git to local
+
 git diff (to see different of file which have been modified)
 
 git restore --staged "file-name" (to continue fixing the file untrack the file)

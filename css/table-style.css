@@ -1,0 +1,32 @@
+.table-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.table-header {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+th {
+  display: table-cell;
+  padding: 15px 0;
+}
+
+.cell {
+  line-height: 40px;
+  text-align: left;
+  padding: 0 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.fixed-table {
+  position: relative;
+  padding-left: 200px;
+}
+
+.cell input {
+  color: black;
+  font-size: 14px;
+}
